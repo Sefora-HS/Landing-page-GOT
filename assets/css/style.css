@@ -1,0 +1,195 @@
+@font-face {
+  font-family: 'GOT';
+  src: url('../font/Game\ of\ Thrones.ttf'),
+}
+
+*, 
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Structure */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  cursor: url('../images/cursor.png'), pointer;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  width: 50%;
+  flex-basis: 50%;
+  max-width: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding: 1rem;
+}
+
+.page-separator {
+  height: 100vh;
+  background-color: #000;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Communs */
+h1 {
+  color: #e3b58b;
+  font-family: "GOT";
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: #e3b58b;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header/menu */
+header {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header-logo {
+  height: 3rem;
+  width: 8rem;
+}
+
+.header-nav {
+  flex-grow: 1;
+}
+
+.header-nav-item {
+  flex-grow: 1;
+}
+
+.header-nav-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  text-align: center;
+  font-family: "GOT";
+}
+
+.header-nav-link:hover {
+  background-color: #4b4b4b;
+  color: #e3b58b;
+}
+
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Articles */
+article {
+  background-color: rgb(255, 251, 248);
+  display: flex;
+}
+
+.got-font {
+  font-family: "GOT";
+}
+
+.paragraphe {
+  font-family: "Cinzel Decorative", serif;
+  line-height: 1.8rem;
+}
+
+.article-date {
+  color: #4A433D;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.page-article ,.page-article-dark {
+  height: 100vh;
+}
+
+.page-article-dark {
+  background-color: #4b4b4b;
+  color: #fff;
+}
+
+/* footer */
+footer {
+  background-image: url(../images/4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #e3b58b;
+  font-family: "GOT";
+  font-size: 1.6rem;
+  background-color: rgba(0, 0, 0, .8);
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+}
+
+.footer-link:hover {
+  background-color: rgba(255, 255, 255, .8);
+  color: #9e734b;
+}
+
+#page-separator-one {
+  background-image: url(../images/7.jpg);
+}
+
+#page-separator-two {
+  background-image: url(../images/6.webp);
+}
+
+#page-separator-three {
+  background-image: url(../images/8.jpg);
+}
+
+#page-separator-four {
+  background-image: url(../images/5\ \(2\).jpeg);
+}
+
